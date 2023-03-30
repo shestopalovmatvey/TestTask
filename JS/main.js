@@ -22,7 +22,7 @@ let count = document.querySelector('.countProduct')
 
 let listOfSizes = document.querySelectorAll('.kind-of-size');
 
-let listOfSelectedSizes = [];
+let selectedSizes = '';
 
 const regionSelect = document.getElementById('region');
 
@@ -37,12 +37,19 @@ window.addEventListener('load', function() {
     }
 });
 
+let delSelectedSize = () => {
+    for (let i of listOfSizes) {
+        i.classList.remove('active-btn');
+    }
+} 
+
 let clickOnSize = () => {
     for (let i of listOfSizes) {
         if (!i.classList.contains('absence-size') && !i.classList.contains('optimal-size')) {
             i.addEventListener('click', (evt) => {
-                listOfSelectedSizes.push(i.textContent)
-                i.classList.toggle('active-btn')
+                delSelectedSize();
+                i.classList.add('active-btn');
+                selectedSizes = i.textContent;
             })
         } 
     }
@@ -108,7 +115,7 @@ articleInput.addEventListener('click', function() {
 //     xhr.open("POST", "process.php", true);
 //     xhr.setRequestHeader("Content-type", "application/x-www-form-urlencoded");
 
-//     xhr.send("art=" + productId.textContent + "&size=" + listOfSelectedSizes.join(', ') + "&qty=" + count.textContent);
+//     xhr.send("art=" + productId.textContent + "&size=" + listOfSelectedSizes + "&qty=" + count.textContent);
 // }
 
 clickOnImg();
