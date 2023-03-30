@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Test task</title>
+    <link rel="stylesheet" href="CSS/style.css">
+    <link rel="shortcut icon" href="Assets/icons/logo.svg" type="image/x-icon">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.mask/1.14.16/jquery.mask.min.js"></script>
+</head>
+<body>
+    <div class="container">
+        <div class="wrapper">
+
+            <section class="product">
+
+                <div class="product-card">
+                    <div class="product-image">
+                        <img src="Assets/img/monkey-kigurumi.png" alt="Product Image 1" id="product-image">
+
+                        <div class="image-buttons">
+                            <ul>
+                                <li class="image-button"><img src="Assets/img/HTB11FufacfrK1RjSszcq6xGGFXaf.jpg" alt=""></li>
+                                <li class="image-button"><img src="Assets/img/HTB1IfykacnrK1RjSspkq6yuvXXaF.jpg" alt=""></li>
+                                <li class="image-button"><img src="Assets/img/HTB1PemfacvrK1Rjy0Feq6ATmVXai.jpg" alt=""></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="price__size">
+                    <div class="price">
+                        <div class="text-of-price">
+                            <ul>
+                                <li><p class="text-grey fullPrice">3 700 ₽</p></li>
+                                <li><p class="text-bold newPrice">2 290 ₽</p></li>
+                                <li class="line"><p class="text-red savedMoney">1 100 ₽</p> <p class="text-black">экономии</p></li>
+                            </ul>
+                            
+                            <div class="icons-of-price">
+                                <p class="text-black text-of-logo">-22%</p>
+                                <img src="Assets/icons/sale.svg" alt="">
+                            </div>
+                        </div>
+                        <div class="price-section">
+                            <ul>
+                                <li class="element-section">Код товара:
+                                    <input type="text" id="article"></li>
+                                <li class="element-section right"> 
+                                    <svg class="checkMark-logo"
+                                    xmlns="http://www.w3.org/2000/svg"
+                                    xmlns:xlink="http://www.w3.org/1999/xlink"
+                                    width="18px" height="18px">
+                                    <path fill-rule="evenodd"  fill="rgb(122, 192, 12)"
+                                    d="M16.793,4.500 L14.704,3.294 L13.499,1.206 L11.088,1.206 L9.000,0.000 L6.911,1.206 L4.500,1.206 L3.294,3.294 L1.206,4.500 L1.206,6.911 L0.001,8.999 L1.206,11.088 L1.206,13.499 L3.295,14.704 L4.500,16.792 L6.912,16.792 L9.000,17.998 L11.088,16.792 L13.499,16.792 L14.705,14.704 L16.793,13.498 L16.793,11.087 L17.999,8.999 L16.793,6.910 L16.793,4.500 L16.793,4.500 ZM8.187,12.682 C8.020,12.850 7.798,12.932 7.578,12.928 C7.358,12.932 7.137,12.850 6.969,12.682 L4.338,10.051 C4.008,9.721 4.008,9.186 4.338,8.856 L5.034,8.159 C5.364,7.830 5.899,7.830 6.229,8.159 L7.578,9.509 L11.770,5.317 C12.100,4.987 12.635,4.987 12.964,5.317 L13.661,6.014 C13.991,6.343 13.991,6.878 13.661,7.208 L8.187,12.682 Z"/>
+                                    </svg>На складе много
+                                </li>
+                                <li class="element-section">Нашли дешевле? <span class="bold">Снизим цену!</span></li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="choose-size">
+                        <div class="kinds-of-size">
+                            <p class="normal-text text-of-size">Выберите размер <span class="lines">&nbsp;</span></p>
+                            <ul>
+                                <li class="kind-of-size">S</li>
+                                <li class="kind-of-size ">M</li>
+                                <li class="kind-of-size">L</li>
+                                <li class="kind-of-size absence-size normal-text">XL</li>
+                                <li class="kind-of-size absence-size normal-text">XLL</li>
+                                <li class="kind-of-size optimal-size">
+                                    <div>
+                                        <svg 
+                                        xmlns="http://www.w3.org/2000/svg"
+                                        xmlns:xlink="http://www.w3.org/1999/xlink"
+                                        width="40px" height="31.5px">
+                                        <path fill-rule="evenodd"  fill="rgb(240, 148, 0)"
+                                        d="M13.234,2.500 C19.888,2.500 25.281,5.802 25.281,9.875 C25.281,13.948 19.888,17.250 13.234,17.250 C6.581,17.250 1.187,13.948 1.187,9.875 C1.187,5.802 6.581,2.500 13.234,2.500 Z"/>
+                                        <path fill-rule="evenodd"  stroke-width="1px" stroke="rgb(255, 255, 255)" fill-opacity="0" fill="rgb(255, 255, 255)"
+                                        d="M13.000,6.500 C15.209,6.500 17.000,7.619 17.000,9.000 C17.000,10.381 15.209,11.500 13.000,11.500 C10.791,11.500 9.000,10.381 9.000,9.000 C9.000,7.619 10.791,6.500 13.000,6.500 Z"/>
+                                        <path fill-rule="evenodd"  stroke-width="1px" stroke="rgb(255, 255, 255)" fill-opacity="0" fill="rgb(255, 255, 255)"
+                                        d="M13.000,3.500 C17.971,3.500 22.000,5.962 22.000,9.000 C22.000,12.038 17.971,14.500 13.000,14.500 C8.029,14.500 4.000,12.038 4.000,9.000 C4.000,5.962 8.029,3.500 13.000,3.500 Z"/>
+                                        <path fill-rule="evenodd"  fill="rgb(240, 148, 0)"
+                                        d="M38.000,31.500 C38.000,31.500 37.250,31.500 36.000,31.500 L36.000,28.500 C36.000,27.948 35.552,27.500 35.000,27.500 C34.448,27.500 34.000,27.948 34.000,28.500 L34.000,31.500 C33.120,31.500 32.089,31.500 31.000,31.500 L31.000,25.500 C31.000,24.948 30.552,24.500 30.000,24.500 C29.448,24.500 29.000,24.948 29.000,25.500 L29.000,31.500 C28.046,31.500 27.035,31.500 26.000,31.500 L26.000,28.500 C26.000,27.948 25.552,27.500 25.000,27.500 C24.448,27.500 24.000,27.948 24.000,28.500 L24.000,31.500 C23.025,31.500 22.005,31.500 21.000,31.500 L21.000,25.500 C21.000,24.948 20.552,24.500 20.000,24.500 C19.448,24.500 19.000,24.948 19.000,25.500 L19.000,31.500 C17.991,31.500 17.003,31.500 16.000,31.500 L16.000,28.500 C16.000,27.948 15.552,27.500 15.000,27.500 C14.448,27.500 14.000,27.948 14.000,28.500 L14.000,31.500 C13.670,31.500 13.326,31.500 13.000,31.500 C1.750,31.500 -0.000,24.605 -0.000,24.605 L-0.000,13.728 C-0.000,13.728 4.464,18.465 12.678,18.465 C20.893,18.465 37.857,18.465 37.857,18.465 C39.040,18.465 40.000,19.407 40.000,20.570 L40.000,29.500 C40.000,30.662 39.183,31.500 38.000,31.500 Z"/>
+                                        <path fill-rule="evenodd"  fill="rgb(240, 148, 0)"
+                                        d="M25.464,13.728 C25.464,13.202 25.464,17.061 25.464,17.061 C25.464,17.061 18.559,17.061 20.464,17.061 C22.369,17.061 25.464,14.254 25.464,13.728 Z"/>
+                                        </svg>
+                                        <p class="bold"><span class="bold">Подобрать</span><br>оптимальный размер</p>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                        
+                        <div class="shopping-cart">
+                            <div class="counter">
+                                <div class="counter-sign minus">
+                                    <p class="text-black signMinus">-</p>
+                                </div>
+
+                                <div class="text-counter">
+                                    <p class="text-black countProduct">1</p>
+                                </div>
+
+                                <div class="counter-sign plus">
+                                    <p class="text-black">+</p>
+                                </div>
+                            </div>
+
+                            <div class="cart">
+                                <svg 
+                                    xmlns="http://www.w3.org/2000/svg"
+                                    xmlns:xlink="http://www.w3.org/1999/xlink"
+                                    width="20px" height="23px">
+                                    <path fill-rule="evenodd"  fill="rgb(255, 255, 255)"
+                                    d="M20.000,20.000 L17.000,20.000 L17.000,23.000 L15.000,23.000 L15.000,20.000 L12.000,20.000 L12.000,18.000 L15.000,18.000 L15.000,15.000 L17.000,15.000 L17.000,18.000 L20.000,18.000 L20.000,20.000 ZM9.000,18.998 L0.607,18.998 C0.436,18.998 0.273,18.928 0.159,18.805 C0.043,18.682 -0.013,18.517 0.002,18.351 L1.000,6.000 C1.029,5.694 1.685,4.999 2.000,4.999 L5.000,4.999 L5.000,3.000 C5.000,1.035 6.490,-0.002 8.499,-0.002 C10.508,-0.002 12.000,1.035 12.000,3.000 L12.000,4.999 L15.000,4.999 C15.314,4.999 15.972,5.694 16.000,6.000 L16.488,12.049 C16.324,12.038 16.167,12.000 16.000,12.000 C12.135,12.000 9.001,15.133 9.000,18.998 ZM5.000,5.000 L5.000,7.000 L6.000,7.000 L6.000,5.000 L5.000,5.000 ZM11.000,3.000 C11.000,1.690 9.838,1.186 8.499,1.186 C7.160,1.186 6.000,1.690 6.000,3.000 L6.000,4.999 L11.000,4.999 L11.000,3.000 ZM12.000,5.000 L11.000,5.000 L11.000,7.000 L12.000,7.000 L12.000,5.000 Z"/>
+                                </svg>
+                                <p class="text-black">В корзину</p>
+                            </div>
+                        </div>
+
+                        <div class="place-order">
+                            <p class="text-black title-order">Быстрый заказ</p>
+                            <p class="normal-text text-order">Вы можете на заполнять никаких форм, просто оставьте свой телефон и наш менеджер с вами свяжется</p>
+
+                            <div class="input-phone-number">
+                                <div class="input-phone">
+                                    <p>+7</p>
+                                    <input class="phone" type="tel" placeholder="(___) ___-__-__" id="phone" >
+                                </div>
+                                
+
+                                <div class="btn-order">
+                                    <p>Заказать в один клик</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+
+            <section class="delivery-info">
+                <div class="delivery-block">
+                    <div class="choose-region">
+                        <label for="region" class="normal-text title-region">Регион доставки:</label>
+                        <select name="region" id="region">
+                            <option value="region1">Краснодар</option>
+                            <option value="region2">Санкт-Петербург</option>
+                            <option value="region3">Красноярск</option>
+                        </select>
+
+                        <div class="delivery-price">
+                            <div class="div1"> 
+                                
+
+                            </div>
+
+                            <div class="div2"> 
+                                
+                            </div>
+
+                            <div class="div3"> 
+                            
+
+                            </div>
+                            <div class="item item-point">Пункты самовывоза</div>
+                            <div class="item item-normal">2 дня</div>
+                            <div class="item item-right">165 ₽</div>
+                            <div class="item item-normal">Курьером</div>
+                            <div class="item item-normal">2 дня</div>
+                            <div class="item item-right">305 ₽</div>
+                            <div class="item item-normal">Почта России</div>
+                            <div class="item item-normal">5-14 дней</div>
+                            <div class="item item-right">250 ₽</div>
+        
+                        </div>
+
+                        <div class="delivery-icons">
+                            <div class="icons">
+                                <img src="Assets/icons/wallet.svg" alt="">
+                                <p>Оплата после проверки</p>
+                            </div>
+
+                            <div class="icons icons2">
+                                <img src="Assets/icons/calendar.svg" alt="">
+                                <p>14 дней на возврат</p>
+                            </div>
+                        </div>
+
+
+                        <div class="backcall-block">
+                            <p class="text-call">Есть вопросы?<br>Звоните!</p>
+
+                            <div class="call-number">
+                                <p class="text-phoneNumber">8 (495) 105-98-18</p>
+                                <p class="order-call"><svg 
+                                    xmlns="http://www.w3.org/2000/svg"
+                                    xmlns:xlink="http://www.w3.org/1999/xlink"
+                                    width="14px" height="16px">
+                                   <path fill-rule="evenodd"  fill="rgb(255, 150, 0)"
+                                    d="M7.000,15.998 C3.140,15.998 -0.000,13.121 -0.000,9.584 C-0.000,6.523 2.375,3.875 5.649,3.289 C5.792,3.264 5.939,3.306 6.042,3.399 L6.869,4.158 C7.039,4.314 7.039,4.568 6.868,4.724 L6.001,5.518 C5.947,5.568 5.879,5.603 5.806,5.622 C3.867,6.110 2.510,7.739 2.510,9.584 C2.510,11.850 4.516,13.693 6.989,13.693 C9.461,13.693 11.462,11.850 11.462,9.584 L11.462,9.572 C11.462,9.351 11.680,9.179 11.922,9.179 L13.562,9.179 C13.804,9.179 14.000,9.351 14.000,9.572 L14.000,9.584 C14.000,13.121 10.859,15.998 7.000,15.998 ZM7.356,8.765 C7.274,8.840 7.163,8.883 7.047,8.883 C7.047,8.883 7.047,8.883 7.047,8.883 C6.931,8.883 6.820,8.840 6.737,8.765 L5.415,7.553 C5.244,7.397 5.244,7.142 5.415,6.986 L8.192,4.441 L5.415,1.895 C5.244,1.739 5.244,1.485 5.415,1.329 L6.737,0.116 C6.819,0.041 6.931,-0.002 7.047,-0.002 C7.163,-0.002 7.274,0.041 7.356,0.116 L11.766,4.157 C11.937,4.314 11.937,4.568 11.766,4.724 L7.356,8.765 Z"/>
+                                   </svg>Заказать обратный звонок
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="info-block">
+                    <div class="list-prop">
+                        <ul>
+                            <li class="info-title description">Описание</li>
+                            <li class="info-title characteristic">Характеристики</li>
+                        </ul>
+                    </div>
+
+                    <div class="description-text">
+                        <p>Помните веселого персонажа из мультфильма про кунг-фу? Энергичный, немного глуповатый и малость невезучий, По доказал каждому, что его возможности безграничны. Пожалуй, эта панда – настоящий символ настойчивости и упорства. Мы предлагаем вам облачиться в нежную черно-белую шерстку, которая так и просит «обними меня!».</p>
+
+                        <p>Костюм мастера кунг-фу изготовлен из велсофта. Это позволяет коже дышать и не потеть, даже если вам предстоит веселить своих друзей весь день. Пижама застегивается на пуговички и плотно прилегает к рукам и ногам в области манжетов. Голову прикрывает яркая мордочка с ушками, которая завершает образ.</p>
+
+                        <p>Панды – ленивые создания, но очень притягательные. Вам будет сложно отказать в объятиях. Почему бы не воспользоваться этой особенностью с пользой для себя? В таком костюме не важно, где именно будет ваша вечеринка. Главное то, что никто на ней вас точно не забудет.</p>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </div>
+    <script src="main.php">
+
+    </script>
+    <script>
+        $(document).ready(function(){
+          $('#phone').mask('(999) 999-99-99');
+        });
+    </script>
+    <script src="JS/main.js"></script>
+</body>
+</html>
