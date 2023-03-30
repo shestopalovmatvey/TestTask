@@ -24,15 +24,25 @@ let listOfSizes = document.querySelectorAll('.kind-of-size');
 
 let listOfSelectedSizes = [];
 
+const regionSelect = document.getElementById('region');
+
+regionSelect.addEventListener('change', function() {
+    localStorage.setItem('selectedRegion', regionSelect.value);
+});
+
+window.addEventListener('load', function() {
+    const selectedRegion = localStorage.getItem('selectedRegion');
+    if (selectedRegion) {
+      regionSelect.value = selectedRegion;
+    }
+});
 
 let clickOnSize = () => {
     for (let i of listOfSizes) {
         if (!i.classList.contains('absence-size') && !i.classList.contains('optimal-size')) {
             i.addEventListener('click', (evt) => {
                 listOfSelectedSizes.push(i.textContent)
-                evt.target.style.color = 'white';
-                evt.target.style.backgroundColor = '#FF9600';
-                evt.target.style.border = '0'
+                i.classList.toggle('active-btn')
             })
         } 
     }
@@ -47,7 +57,7 @@ let calculationDiscount = () => {
 
 minus.addEventListener('click', (evt) => {
     let value = +count.textContent
-    if (value == 0) return
+    if (value == 1) return
     else {
         count.textContent = --value
     }
