@@ -58,7 +58,7 @@ let clickOnSize = () => {
 let calculationDiscount = () => {
     let old = +fullPrice.textContent.replace("₽", '').replace(' ', '');
     let newP = +newPrice.textContent.replace("₽", '').replace(' ', '');
-    savedMoney.textContent = old - newP;
+    savedMoney.textContent = old - newP + " ₽";
     percentSaved.textContent = Math.round(((old - newP) / old) * 100) + '%'
 }
 

@@ -526,7 +526,12 @@ ul {
     font-weight: 700;
 }
 
+.item-shifted {
+    margin-right: 80px;
+}
+
 .item-point {
+    width: 150px;
     text-align: left;
     font-weight: 500;
     text-decoration: underline dotted;
@@ -694,3 +699,297 @@ ul {
     background-color: #FF9600;
     border: 0;
 }
+
+
+@media screen and (max-width: 350px) {
+
+    .wrapper {
+        width: 300px;
+        margin: 0 auto;
+        padding: 15px;
+    }
+    .product {
+        flex-wrap: wrap;
+    }
+
+    .product-card {
+        flex-wrap: wrap;
+        margin-bottom: 40px;
+    }
+
+    .product-image img{
+        width: 268px;   
+    }
+
+    .image-buttons {
+        bottom: 60px;
+        left: 95px;
+    }
+
+    .image-buttons > ul {
+        display: flex;
+        flex-direction: row !important;
+        justify-content: space-between !important;
+    }
+
+    .image-buttons  ul li {
+        width: 50px;
+        height: 50px;
+        margin-right: 20px;
+    }
+
+    .price {
+        width: 268px;
+        border-top: 1px dotted #d1d1d1;
+    }
+
+    .text-of-price {
+        margin-top: 15px;
+    }
+
+    .fullPrice {
+        font-size: 12px;
+    }
+
+    .newPrice {
+        width: 70px;
+        font-size: 19px;
+    }
+
+    .savedMoney {
+        font-size: 11px;
+        display: block;
+    }
+
+    .text-black {
+        display: block;
+    }
+
+    .text-of-logo {
+        font-size: 14px;
+        top: 33px;
+        left: 3px;
+    }
+
+    .text-of-price ul {
+        width: 80%;
+    }
+
+    .icons-of-price {
+        margin-top: 10px;
+    }
+
+    .icons-of-price img {
+        width: 50px;
+        height: 50px;
+    }
+
+    .price-section {
+        margin-top: 10px;
+    }
+
+    .price-section ul li {
+        margin-bottom: 5px;
+    }
+
+    .element-section {
+        font-size: 11px;
+    }
+
+    #article {
+        width: 48px;
+        font-size: 12px;
+    }
+
+    .element-section:nth-child(3) {
+        font-size: 12px;
+    }
+
+    .lower-price {
+        font-size: 12px;
+        display: block;
+        border: 0;
+        text-decoration: underline dotted;
+    }
+
+    .text-of-size {
+        font-size: 12px;
+    }
+
+    .lines {
+        width: 164px;
+        margin-left: 5px;
+    }
+    .choose-size .kinds-of-size ul {
+        width: 268px;
+        justify-content: start;
+        flex-wrap: wrap;
+    }
+
+    .kind-of-size {
+        margin-right: 30px;
+    }
+
+    .kind-of-size:nth-child(1) {
+        margin-left: 8px;
+    }
+
+    .kind-of-size:nth-child(5) {
+        margin-right: 0;
+    }
+
+    .shopping-cart {
+        width: 268px;
+        margin-top: 29px;
+        justify-content: flex-start;
+    }
+
+    .cart {
+        width: 135px;
+        height: 40px;
+        right: -17px;
+    }
+
+    .counter-sign {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 25px;
+        height: 25px;
+        margin-right: 19px;
+    }
+
+    .minus p {
+        text-align: center; 
+    }
+
+    .signMinus {
+        margin-bottom: 5px;
+        font-size: 30px !important;
+    }
+
+    .countProduct {
+        font-size: 20px !important;
+    }
+
+    .signPlus {
+        margin-bottom: 5px;
+        font-size: 30px !important;
+    }
+
+    .cart p {
+        font-size: 16px !important;
+        margin-left: 5px;
+    }
+
+    .place-order {
+        margin-top: 30px;
+    }
+    
+    .text-order {
+        font-size: 13px;
+        margin-top: 10px;
+        margin-right: 30px;
+    }
+
+    .input-phone-number {
+        display: flex;
+        flex-direction: column;;
+        width: 268px;
+        margin-bottom: 50px;
+    }
+
+    .btn-order {
+        width: 268px !important;
+        position: relative;
+        top: 25px;
+        right: 18px;
+    }
+
+    .delivery-info {
+        flex-wrap: wrap;
+    }
+
+    .delivery-block {
+        width: 268px;
+    }
+
+    .delivery-price {
+        width: 268px;
+    }
+
+    .item-point {
+        font-size: 12px;
+    }
+
+    .item-normal {
+        font-size: 12px;
+    }
+
+    .item-shifted {
+        margin-right: 40px;
+    }
+
+    .delivery-icons {
+        padding: 10px 10px;
+    }
+
+    .icons {
+        gap: 15px;
+        margin-right: 10px;
+    }
+
+    .icons p {
+        font-size: 11px;
+    }
+
+    .icons2 {
+        margin-right: 0;
+    }
+
+    .text-call {
+        font-size: 14px;
+        text-align: start;
+        margin-right: 20px;
+    }
+
+    .call-number {
+        margin-right: 0;
+    }
+
+    .text-phoneNumber {
+        font-size: 20px;
+    }
+
+    .order-call {
+        font-size: 12px;
+    }
+
+    .list-prop {
+        width: 268px;
+    }
+
+    .info-title {
+        font-size: 16px !important;
+    }
+
+    
+    .description-text {
+        padding: 0;
+        margin-top: 15px;
+        margin-right: 0;
+    }
+
+    .description-text p {
+        
+        font-size: 14px;
+    }
+      
+}
+  
+
+
+
+  
+  
+  
