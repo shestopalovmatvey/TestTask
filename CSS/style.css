@@ -861,24 +861,21 @@ ul {
 
     .minus p {
         text-align: center; 
-    }
-
-    .signMinus {
         margin-bottom: 5px;
-        font-size: 30px !important;
+        font-size: 30px;
     }
 
-    .countProduct {
-        font-size: 20px !important;
+    .text-counter .countProduct {
+        font-size: 20px;
     }
 
-    .signPlus {
+    .plus .signPlus {
         margin-bottom: 5px;
-        font-size: 30px !important;
+        font-size: 30px;
     }
 
-    .cart p {
-        font-size: 16px !important;
+    .cart .text-cart {
+        font-size: 16px;
         margin-left: 5px;
     }
 
@@ -900,7 +897,7 @@ ul {
     }
 
     .btn-order {
-        width: 268px !important;
+        width: 268px;
         position: relative;
         top: 25px;
         right: 18px;
@@ -969,8 +966,8 @@ ul {
         width: 268px;
     }
 
-    .info-title {
-        font-size: 16px !important;
+    .list-prop ul .info-title {
+        font-size: 16px;
     }
 
     
@@ -984,12 +981,4 @@ ul {
         
         font-size: 14px;
     }
-      
 }
-  
-
-
-
-  
-  
-  
